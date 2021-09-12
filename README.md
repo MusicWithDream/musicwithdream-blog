@@ -20,5 +20,9 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### git提交规范
+> feat:新特性  
+> bugfix:修复bug  
+> docs:文档修改，不影响代码运行  
+> style:格式化  
+> lint:修改eslint规则

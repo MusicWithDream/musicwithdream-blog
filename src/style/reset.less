@@ -1,0 +1,55 @@
+/*
+* Basic reset css for mobile
+* author : reggiehuang
+*/
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,a,address,
+em, img, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td,i,b, s,button {
+    margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; font-size:100%;
+    font-family: PingFangSC-Regular,PingFang SC,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+}
+
+ul,ol{list-style: none}
+a img { border:none;vertical-align: top; }
+a {text-decoration: none;}
+
+button {overflow:visible;padding:0;margin:0;border:0 none;background-color:transparent;}
+button::-moz-focus-inner { padding:0;}
+
+textarea,input{background:none;padding:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-appearance:none;}
+input[type=password] {-webkit-text-security:disc;}
+textarea:focus,input:focus,button:focus{outline:none;}
+body {word-wrap:break-word;}
+* {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+/* 禁止选中文字*/
+html,body,section,div,p,a,button,span,em,i,video,img,ul,li,dt,dd,ol{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+}
+
+/*禁止系统默认菜单*/
+section,div,p,a,button,span,em,i,video,img,ul,li,dt,dd,ol{-webkit-touch-callout: none;}
+
+
+/* common.css */
+
+/* @unit: 1rem / 100; */
+/*
+* :root {font-size: 50px; }
+* 100vw = 856px --> 1px  = 100vw / 856
+* :root {font-size: 50 * 100vw / 856}
+*/
+:root {
+    font-size: calc(100vw / 856 * 100);
+}
+html {
+    background-color: #f6f6f6;
+    padding-bottom: 1.24rem;
+}
+body {
+    font-size: 0.16rem !important;
+    max-width: 8.56rem;
+    margin: auto;
+}
